@@ -1,0 +1,10 @@
+int shared;
+void init() {
+shared = 1;
+return;
+}
+void inspect() {
+init();
+int copy = shared;
+return;
+}

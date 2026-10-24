@@ -1,0 +1,6 @@
+void inspect() {
+int x;
+if (x) {
+}
+return;
+}

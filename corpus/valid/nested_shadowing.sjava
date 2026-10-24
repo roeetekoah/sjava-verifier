@@ -1,0 +1,11 @@
+int value = 1;
+void inspect(int flag) {
+int value = 2;
+if (flag) {
+String value = "inner";
+while (flag) {
+char value = 'x';
+}
+}
+return;
+}

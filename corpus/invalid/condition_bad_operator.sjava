@@ -1,0 +1,5 @@
+void inspect() {
+if (true || && false) {
+}
+return;
+}

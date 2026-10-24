@@ -1,0 +1,5 @@
+void inspect() {
+return;
+int stillChecked = 1;
+return;
+}

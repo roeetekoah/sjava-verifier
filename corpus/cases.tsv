@@ -1,0 +1,94 @@
+path	status	rules	diagnostic	line
+valid/walkthrough.sjava	0	SCOPE,CALL,INIT		0
+valid/empty.sjava	0	FILE		0
+valid/comments_only.sjava	0	FILE,LAYOUT		0
+valid/globals_only.sjava	0	GLOBAL,TYPE		0
+valid/all_types.sjava	0	TYPE,LITERAL		0
+valid/numeric_forms.sjava	0	LITERAL,TYPE		0
+valid/same_line_order.sjava	0	DECL,ASSIGN,INIT		0
+valid/unused_uninitialized.sjava	0	INIT		0
+valid/local_assignment.sjava	0	ASSIGN,INIT,TYPE		0
+valid/all_final.sjava	0	FINAL		0
+valid/names.sjava	0	NAME		0
+valid/separate_namespaces.sjava	0	NAME,CALL		0
+valid/forward_and_recursive.sjava	0	CALL		0
+valid/later_global.sjava	0	GLOBAL		0
+valid/global_assignment_in_method.sjava	0	GLOBAL,INIT		0
+valid/nested_shadowing.sjava	0	SCOPE		0
+valid/shadow_initializer.sjava	0	SCOPE,DECL		0
+valid/sibling_scopes.sjava	0	SCOPE		0
+valid/branch_initialization.sjava	0	INIT,FLOW		0
+valid/nested_global_initialization.sjava	0	GLOBAL,INIT,FLOW		0
+valid/parameter_conversions.sjava	0	CALL,TYPE		0
+valid/final_parameter.sjava	0	FINAL,CALL		0
+valid/condition_chain.sjava	0	FLOW,TYPE		0
+valid/early_return.sjava	0	RETURN,FLOW		0
+valid/nested_then_final_return.sjava	0	RETURN		0
+valid/layout.sjava	0	LAYOUT,RETURN		0
+valid/large_integer.sjava	0	LITERAL		0
+valid/literal_delimiters.sjava	0	LITERAL,LAYOUT		0
+invalid/duplicate_global.sjava	1	DECL	Duplicate variable	2
+invalid/duplicate_local.sjava	1	DECL	Duplicate variable	3
+invalid/parameter_collision.sjava	1	DECL	Duplicate variable	2
+invalid/duplicate_parameters.sjava	1	CALL	Duplicate parameter name	1
+invalid/duplicate_method.sjava	1	CALL	Duplicate method name	4
+invalid/unknown_assignment.sjava	1	ASSIGN	Unknown LHS	2
+invalid/unknown_global_assignment.sjava	1	GLOBAL	Assignment to unknown global	1
+invalid/unknown_value.sjava	1	INIT	Unknown identifier	2
+invalid/global_forward_reference.sjava	1	GLOBAL	Unknown identifier	1
+invalid/uninitialized_global.sjava	1	INIT	Variable used before initialization	2
+invalid/uninitialized_local.sjava	1	INIT	Variable used before initialization	3
+invalid/self_initializer.sjava	1	INIT	Unknown identifier	2
+invalid/assignment_self_use.sjava	1	INIT	Variable used before initialization	3
+invalid/shadow_blocks_global.sjava	1	SCOPE,INIT	Variable used before initialization	4
+invalid/scope_escape.sjava	1	SCOPE	Unknown identifier	5
+invalid/method_initialization_isolation.sjava	1	GLOBAL,INIT	Variable used before initialization	7
+invalid/callee_has_no_initialization_effect.sjava	1	CALL,INIT	Variable used before initialization	8
+invalid/final_missing_global.sjava	1	FINAL	Final global must be initialized	1
+invalid/final_missing_local.sjava	1	FINAL	Final variable must be initialized	2
+invalid/final_list_missing.sjava	1	FINAL	Final global must be initialized	1
+invalid/final_reassign_global.sjava	1	FINAL	Reassignment to final global	2
+invalid/final_reassign_local.sjava	1	FINAL	Reassignment to final	3
+invalid/final_reassign_parameter.sjava	1	FINAL	Reassignment to final	2
+invalid/narrowing.sjava	1	TYPE	Type mismatch	3
+invalid/char_numeric.sjava	1	TYPE	Type mismatch	1
+invalid/boolean_to_double.sjava	1	TYPE	Type mismatch	1
+invalid/unknown_method.sjava	1	CALL	Unknown method	2
+invalid/argument_count.sjava	1	CALL	Wrong number of arguments	5
+invalid/argument_type.sjava	1	CALL,TYPE	Arg #1 type mismatch	5
+invalid/argument_uninitialized.sjava	1	CALL,INIT	Variable used before initialization	6
+invalid/global_call.sjava	1	GLOBAL	Illegal statement in global scope	1
+invalid/global_if.sjava	1	GLOBAL	if/while declared outside a method	1
+invalid/global_return.sjava	1	GLOBAL	Illegal statement in global scope	1
+invalid/nested_method.sjava	1	CALL	Method declared inside a block	2
+invalid/condition_string.sjava	1	FLOW,TYPE	Illegal condition atom type	3
+invalid/condition_uninitialized.sjava	1	FLOW,INIT	Variable used before initialization	3
+invalid/condition_bad_operator.sjava	1	FLOW	Illegal statement in method	2
+invalid/condition_parentheses.sjava	1	FLOW	Illegal statement in method	2
+invalid/missing_return.sjava	1	RETURN	must end with return	3
+invalid/nested_return_only.sjava	1	RETURN	must end with return	5
+invalid/statement_after_return.sjava	1	RETURN	must end with return	4
+invalid/return_value.sjava	1	RETURN	Illegal statement in method	2
+invalid/unmatched_close.sjava	1	LAYOUT	Unmatched	1
+invalid/unclosed_block.sjava	1	LAYOUT	Unclosed block	2
+invalid/leading_comment.sjava	1	LAYOUT	Illegal statement in global scope	1
+invalid/trailing_comment.sjava	1	LAYOUT	Illegal statement in global scope	1
+invalid/block_comment.sjava	1	LAYOUT	Illegal statement in global scope	1
+invalid/two_statements.sjava	1	LAYOUT	Illegal statement in global scope	1
+invalid/multiline_header.sjava	1	LAYOUT	Illegal statement in global scope	1
+invalid/bare_scope.sjava	1	LAYOUT	Illegal statement in method	2
+invalid/name_single_underscore.sjava	1	NAME	Illegal statement in global scope	1
+invalid/name_double_underscore.sjava	1	NAME	Illegal statement in global scope	1
+invalid/name_digit.sjava	1	NAME	Illegal statement in global scope	1
+invalid/method_underscore.sjava	1	NAME	Illegal statement in global scope	1
+invalid/numeric_dot.sjava	1	LITERAL	Illegal statement in global scope	1
+invalid/numeric_exponent.sjava	1	LITERAL	Illegal statement in global scope	1
+invalid/char_two.sjava	1	LITERAL	Illegal statement in global scope	1
+invalid/escape_string.sjava	1	LITERAL	Illegal statement in global scope	1
+invalid/arithmetic.sjava	1	EXCLUDE	Illegal statement in global scope	1
+invalid/array.sjava	1	EXCLUDE	Illegal statement in global scope	1
+invalid/else.sjava	1	EXCLUDE	Illegal statement in method	4
+invalid/non_void.sjava	1	EXCLUDE	Illegal statement in global scope	1
+invalid/chained_assignment.sjava	1	ASSIGN	Illegal statement in global scope	2
+invalid/trailing_comma.sjava	1	DECL	Illegal statement in global scope	1
+invalid/unreachable_still_checked.sjava	1	FLOW	Unknown identifier	3

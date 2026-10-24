@@ -1,0 +1,6 @@
+int shared;
+void inspect() {
+shared = 1;
+int copy = shared;
+return;
+}

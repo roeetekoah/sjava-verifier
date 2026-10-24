@@ -1,0 +1,9 @@
+void inspect() {
+if (true) {
+int x = 1;
+}
+while (false) {
+String x = "other";
+}
+return;
+}

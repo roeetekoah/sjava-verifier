@@ -1,0 +1,5 @@
+void inspect() {
+int copy = later;
+return;
+}
+int later = 1;

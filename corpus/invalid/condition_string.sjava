@@ -1,0 +1,6 @@
+void inspect() {
+String x = "text";
+if (x) {
+}
+return;
+}

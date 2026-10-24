@@ -1,0 +1,5 @@
+int inspect = 2;
+void inspect() {
+inspect();
+return;
+}

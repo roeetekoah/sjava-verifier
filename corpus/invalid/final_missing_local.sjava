@@ -1,0 +1,4 @@
+void inspect() {
+final int x;
+return;
+}

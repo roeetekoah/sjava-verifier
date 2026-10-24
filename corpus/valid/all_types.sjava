@@ -1,0 +1,5 @@
+int count = +007;
+double ratio = -.25;
+boolean ready = ratio;
+char marker = '#';
+String label = "";

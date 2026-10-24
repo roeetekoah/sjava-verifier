@@ -1,0 +1,4 @@
+int _0 = 1, a__ = _0, A2 = a__;
+void inspect2_() {
+return;
+}

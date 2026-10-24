@@ -1,0 +1,5 @@
+final int a = 1, b = a;
+void inspect() {
+final String text = "ok";
+return;
+}

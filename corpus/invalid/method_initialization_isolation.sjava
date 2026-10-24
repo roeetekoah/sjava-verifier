@@ -1,0 +1,9 @@
+int shared;
+void first() {
+shared = 1;
+return;
+}
+void second() {
+int copy = shared;
+return;
+}

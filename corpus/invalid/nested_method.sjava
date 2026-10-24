@@ -1,0 +1,6 @@
+void outer() {
+void inner() {
+return;
+}
+return;
+}

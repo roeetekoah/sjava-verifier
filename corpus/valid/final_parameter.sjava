@@ -1,0 +1,9 @@
+void consume(final int x) {
+int copy = x;
+return;
+}
+void inspect() {
+int input = 1;
+consume(input);
+return;
+}

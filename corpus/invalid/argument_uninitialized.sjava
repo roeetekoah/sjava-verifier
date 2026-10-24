@@ -1,0 +1,8 @@
+void consume(int x) {
+return;
+}
+void inspect() {
+int x;
+consume(x);
+return;
+}

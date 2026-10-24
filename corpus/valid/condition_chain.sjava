@@ -1,0 +1,8 @@
+void inspect() {
+int x = 1;
+double d = .2;
+boolean b = false;
+if (x && d || b || -2.5) {
+}
+return;
+}

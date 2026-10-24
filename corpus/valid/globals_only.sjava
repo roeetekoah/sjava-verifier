@@ -1,0 +1,3 @@
+int count;
+count = 2;
+boolean ready = count;

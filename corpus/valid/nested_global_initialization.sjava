@@ -1,0 +1,8 @@
+int shared;
+void inspect() {
+if (false) {
+shared = 1;
+}
+boolean seen = shared;
+return;
+}

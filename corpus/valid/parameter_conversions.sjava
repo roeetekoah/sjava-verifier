@@ -1,0 +1,8 @@
+void consume(double x, boolean y, String text, char marker) {
+x = 1;
+return;
+}
+void inspect() {
+consume(1, .5, "sample", 'z');
+return;
+}

@@ -1,0 +1,12 @@
+int total;
+void inspect(int seed) {
+  total = seed;
+  if (total && true) {
+    double total = .5;
+    consume(total);
+  }
+  return;
+}
+void consume(double value) {
+  return;
+}

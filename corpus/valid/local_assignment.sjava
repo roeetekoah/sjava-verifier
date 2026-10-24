@@ -1,0 +1,6 @@
+void inspect() {
+int value;
+value = 1;
+double wider = value;
+return;
+}

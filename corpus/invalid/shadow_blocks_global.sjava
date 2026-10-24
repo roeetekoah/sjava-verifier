@@ -1,0 +1,6 @@
+int x = 1;
+void inspect() {
+int x;
+int copy = x;
+return;
+}

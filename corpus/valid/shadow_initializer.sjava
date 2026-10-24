@@ -1,0 +1,5 @@
+int value = 1;
+void inspect() {
+double value = value;
+return;
+}

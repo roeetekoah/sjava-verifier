@@ -1,0 +1,9 @@
+void first() {
+second();
+return;
+}
+void second() {
+first();
+second();
+return;
+}

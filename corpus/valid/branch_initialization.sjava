@@ -1,0 +1,8 @@
+void inspect() {
+int x;
+if (false) {
+x = 1;
+}
+int copy = x;
+return;
+}

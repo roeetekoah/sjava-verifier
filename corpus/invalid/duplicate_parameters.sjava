@@ -1,0 +1,3 @@
+void inspect(int x, String x) {
+return;
+}
